@@ -359,19 +359,20 @@ h3 {
         height: 80px;
     }
 
-    .project-gallery {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+ .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 2px;
+}
 
     .project-card {
         height: auto;
     }
 
     .project-card img {
-        width: 100%;
+        width: 90px;
         height: auto;
-        max-height: 180px;
+        max-height: 90px;
         object-fit: cover;
     }
 
